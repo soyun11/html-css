@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky</title>
+    <style>
+        body{
+            margin:0;
+            height:4000px;
+        }
+        .box{
+            width:100px;
+            height:100px;
+        }
+        .red-box{
+            background-color: red;
+        }
+        .green-box{
+            background-color: green;
+            position: sticky; 
+            /*position 속성값이 sticky일 때는 스크롤하는 중에 일정 지점(임계점)이 되면 요소가 fixed 값처럼 작동한다.*/
+            /*실행결과를 보면 요소들이 static값일 때처럼 표시된다. 그러나 웹 브라우저를 스크롤해 보면 화면에서 사라지는 빨간색과 파란색 요소와 다르게
+            초록색 요소는 top 속성값이 0인 위치에 고정되어 있다.*/
+            top: 0;
+        }
+        .blue-box{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>%: 해당 속성의 상위 요소 속성값에 상대적인 크기를 가진다.</title>
+    <style>
+        .parent{
+            font-size:16px;
+        }
+        .child{
+            font-size:80%; /* 16px(부모 font-size 크기)*0.8 = 12.8px */
+        }
+        .child-to-child{
+            font-size:20%; /* 12.8px(부모 font-size 크기) * 0.8 = 10.24px */
+        }
+    </style>
+</head>
+<body>
+    <p class="parent">parent
+        <p class="child">
+            child
+            <p class="child-to-child">
+                child-to-child
+            </p>
+        </p>
+    </p>
+</body>
+</html>

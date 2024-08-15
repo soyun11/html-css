@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vw 단위: 뷰포트(코드가 보이는 대상) 너비를 기준으로 상대적인 크기</title>
+    <style>
+        /* 기준 뷰포트 너비 900px */
+        .parent{
+            font-size:1vw; /* 900px * 1/100 = 9px */
+        }
+        .child{
+            font-size:2vw; /* 900px * 2/100 = 18px*/
+        }
+    </style>
+</head>
+<body>
+    <p class="parent">parent
+        <p class="child">child</p>
+    </p>
+</body>
+</html>

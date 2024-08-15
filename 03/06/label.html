@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label> <!--암묵적인 방법-->
+            아이디
+            <input type="text">
+        </label>
+
+        <!--명시적인 방법: label태그의 for속성과 상호작용 요소의 id속성값을 같은 값으로 설정-->
+        <label for="userpw">비밀번호</label>
+        <input type="password" id="userpw">
+
+        <!--둘 다 사용-->
+        <label for="username">
+            이름
+            <input type="text" id="username">
+        </label>
+    </form>
+</body>
+</html>

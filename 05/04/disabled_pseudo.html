@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:disabled</title>
+    <style>
+      input:disabled,
+      button:disabled {
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" disabled />
+    <button disabled>버튼</button>
+  </body>
+</html>
+<!--disabled 선택자는 상호작용 요소가 비활성화되어 있으면 스타일을 적용한다.
+다음 코드는 입력 요소에 disabled 속성이 있으므로 입력 요소의 배경색에
+회색을 적용한다.-->

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float-layout</title>
+    <style>
+        div{
+            color:white;
+        }
+        .red-box{
+            background-color: red;
+            float:left; /*div 태그는 블록 성격이라서 width 속성을 따로 사용하지 않아도 가로 한 줄을 전부 차지하는데, 
+            빨간색 요소의 folat 속성값을 left로 지정하면, 블록 성격 요소가 인라인 성격 요소처럼 배치되는 것처럼 보인다.
+            */
+        }
+        .blue-box{
+            background-color: blue;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <div class="red-box">red-box</div>
+    <div class="blue-box">blue-box</div>
+</body>
+</html>

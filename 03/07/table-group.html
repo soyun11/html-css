@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <caption>표 제목: 음료수 가격표</caption>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>총 금액</td>
+                <td colspan="3">6,500원</td><!--열 병합-->
+                <!--5행 2열부터 열 3개를 병합했으므로 나머지 열은 생성하지 않습니다.-->
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>콜라</td>
+                <td>1개</td>
+                <td>1,500원</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>사이다</td>
+                <td>2개</td>
+                <td rowspan="2">1,000원</td><!--행 병합-->
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>탄산수</td>
+                <td>3개</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+<!--표에도 행을 묶어 그룹화 가능->
+thead(헤더 영역에 해당하는 행), tfoot(푸터 영역에 해당하는 행), tbody(본문 영역에 해당하는 행을 그룹 짓는다)태그
+사용한다면 반드시 thead,tfoot,tbody순서이고, thead와 tfoot태그는 한 번만 사용 가능, thead태그로 그룹화한 행은 th태그로 열을 생성해야 함.-->

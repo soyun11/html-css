@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute</title>
+    <style>
+        body{
+            margin:0; /*absolute 값의 기준점은 웹 브라우저의 왼쪽 위 모서리이므로
+            웹 브라우저에서 표시될 때 기준점이 헷갈리지 않도록 body 태그의 margin속성값을 0으로 지정*/
+        }
+        .box{
+            width:100px;
+            height:100px;
+        }
+        .red-box{
+            background-color: red;
+        }
+        .green-box{
+            background-color: green;
+            position: absolute;
+            /*relative일 때는 기준점이 요소의 왼쪽 위 모서리지만, absolute일 때는 웹 브라우저의 왼쪽 위 모서리이다.*/
+            /*absolute 값일 때, top, bottom 속성을 사용하지 않으면 요소는 원래 있던 위치에서 가로로만 움직인다.*/
+            /*position 속성값이 absolute일 때, top이나 bottom 속성을 지정하지 않으면 left나 right 속성은 원래 위치에서
+            x축 방향으로만 움직인다.*/
+            left:100px;
+            /*top:100px;*/
+
+        }
+        .blue-box{
+            background-color: blue;
+            /*relative 값일 때는 요소가 이동하더라도 요소가 원래 위치에 있는 것처럼 유지된다.
+            하지만, absolute 값일 때는 요소를 움직이면 요소가 원래 있던 공간은 빈 공간으로 인식된다.!*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>

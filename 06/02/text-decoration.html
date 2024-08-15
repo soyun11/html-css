@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-decoration속성: 텍스트를 꾸며 주기(텍스트에 선을 긋기) 위해 사용</title>
+    <style>
+        a{
+            text-decoration: none;/*텍스트 장식을 모두 지운다.*/
+        }
+        a+a{
+            text-decoration: line-through;/*텍스트 중간을 관통하는 선을 긋는다.*/
+        }
+        a+a+a{
+            text-decoration: overline;/*텍스트 위에 선을 긋는다.*/
+        }
+        a+a+a+a{
+            text-decoration: underline;/*텍스트 아래에 선을 긋는다.*/
+        }
+    </style>
+</head>
+<body>
+    <a href="#" >첫번째 링크</a>
+    <a href="#" >두번째 링크</a>
+    <a href="#" >세번째 링크</a>
+    <a href="#" >네번째 링크</a>
+</body>
+</html>

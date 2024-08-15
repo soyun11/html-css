@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rem단위는 html 태그의 텍스트 크기에 대한 상대적인 값으로, 1rem은 html태그의 텍스트 크기의 1배이다.</title>
+    <style>
+        html{
+            font-size:1rem; /* 16px * 1rem = 16px*/
+        }
+        .parent{
+            font-size:1rem;
+        }
+        .child{
+            font-size:2rem;
+        }
+    </style>
+</head>
+<body>
+    <html class="html">html
+        <p class="parent">parent
+            <p class="child">child</p>
+        </p>
+    </html>
+</body>
+</html>

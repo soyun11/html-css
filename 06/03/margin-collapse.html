@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin collpase</title>
+  <style>
+    .first{
+      margin-bottom:20px;
+    }
+    .second{
+      margin-top:30px;
+    }
+  </style>
+</head>
+<body>
+  <p class="first">lorem1</p>
+  <p class="second">lorem2</p>
+</body>
+</html>
+<!--margin겹침 현상: 같은 레벨(형제 관계)에 있는 요소들의 margin 영역이 중첩되면 더 큰 값을 가진 margin 영역으로 병합되어 출력되는 현상-->

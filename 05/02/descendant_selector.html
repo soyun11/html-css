@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>하위 선택자(descendant selector)</title>
+  <style>
+    div p{ /*선택자1 선택자2 선택자3...{CSS코드}*/
+      color:red;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>lorem 1</p><!--div태그의 하위에 있는(자손인) p태그에만 적용-->
+    <ul>
+      <li>
+        <p>lorem 2</p><!--div태그의 하위에 있는(자손인) p태그에만 적용-->       
+      </li>
+      <li>
+        <p>lorem 3</p><!--div태그의 하위에 있는(자손인) p태그에만 적용-->
+      </li>
+    </ul>
+  </div>
+  <p>lorem 4</p><!--적용 안됨.-->
+</body>
+</html>
+<!--/*하위 선택자는 선택자의 범위를 특정 부모 요소의 하위 요소로 한정하는 방법이다.
+        2개 이상의 선택자를 사용하고, 선택자와 선택자는 공백으로 구분한다.*/
+        /*div 태그의 하위에 있는 p태그로 작성된 요소만 선택해 텍스트 색상을 빨간색으로 적용*/-->
+<!--하위 선택자와 자식 선택자의 차이점: 자식 선택자는 직접적인 부모일 때만 적용되지만,  하위 선택자는 특정 부모 요소의 하위 요소이기만 하면 모두 적용된다.
+그러니까 하위 선택자가 좀 더 넓은 개념인 것 같다.-->

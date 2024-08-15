@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:enabled</title>
+    <style>
+      input:enabled,
+      button:enabled {
+        background-color:#ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text">
+    <button>버튼</button>
+  </body>
+</html>
+<!--enabled 선택자는 :disabled 선택자와 반대로 상호작용 요소가 활성화 되어 있으면
+스타일을 적용한다. 즉, disabled 속성이 사용되지 않은 상호작용 요소를 선택한다.
+따라서 다음 코드에서는 disabled 속성이 적용되지 않은 버튼의 배경색에 회색을 적용한다.-->

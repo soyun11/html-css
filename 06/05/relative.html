@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative</title>
+    <style>
+        .box{
+            width:100px;
+            height:100px;
+        }
+        .red-box{
+            background-color: red;
+        }
+        .green-box{
+            background-color: green;
+            position: relative;
+            left:100px; /*relative의 속성명은 top, right, bottom, left가 있는데,
+            이 중 left는 왼쪽을 기준으로 좌푯값을 지정하는 것이다.*/
+            top:100px;
+
+        }
+        .blue-box{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box green-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>
+<!--position 속성은 HTML 요소를 기본 흐름에서 벗어나 좌푯값에 따라 배치할 때 사용한다.
+속성값은 static(기본값), relative(기준점이 요소의 왼쪽 위 모서리이다.), absolute, fixed, sticky가 있다.-->

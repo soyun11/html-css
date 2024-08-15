@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자식 선택자(Child Selector)</title>
+  <style>
+    .box > p{/*부모 선택자 > 자식 선택자{CSS코드}*/ 
+        /*자식 선택자는 부모 요소의 하위에 있는 자식 요소에 스타일을 적용할 떄 사용한다. 2개 이상의 선택자가 사용되며,
+        선택자와 선택자는 > 기호로 구분한다.*/
+        /*class속성값이 box인 요소와 자식 관계에 있는 p태그*/
+      color:red;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>lorem 1</p><!--빨간색-->
+    <div><p>lorem 2</p></div><!--빨간색 아님-->
+    <p>lorem 3</p><!--빨간색-->
+  </div>
+</body>
+</html>
